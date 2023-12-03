@@ -19,12 +19,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleText(event) {
+        event = event || window.event;
+        var element = event.target || event.srcElement;
+        if (element.nodeName != "BUTTON") {
+          return;
+        }
+        if (element.innerHTML.trim() === "Infos Zeigen") {
+          element.innerHTML = "Infos Verstecken";
+        } else {
+          element.innerHTML = "Infos Zeigen";
+        }
+      } 
+      </script>
   </head>
   <body>
     <header>
       <h1>Die Kandidatinnen und Kandidaten der Liste Fortschritt</h1>
     </header>
 
-    <div class="border rounded border-primary">test</div>
+    <div class="container overflow-hidden">
+      <div class="row  gx-5">
+
+        <div class="col">
+          <div id="dummy" class="card" style="padding:0px; min-width: 250pt">
+            <img src="images/dummy.jpg" class="card-img-top" alt="dummy image">
+            <div class="card-body">
+              <h5 class="card-title">Raphael Braun</h5>
+              <p class="card-text text-muted">Wissenschaftlicher Mitarbeiter und Doktorand in Informatik, Musiker Künstler</p>
+              <button class="btn btn-primary type="button" onClick="toggleText()" data-bs-toggle="collapse" data-bs-target="#collapseDummy" aria-expanded="false" aria-controls="collapseExample"">
+                Infos Zeigen
+              </button>
+              <div class="collapse" id="collapseDummy">
+                <div class="card-text mt-5">
+                  <p>
+                    Ich bin hier in Wendelsheim aufgewachsen, in den Kindergarten und zur Grundschule gegangen.
+                    Mittlere Reife habe ich in Rottenburg auf der Kreuzerfeld-Realschule gemacht und danach Abitur am Technischen Gymnasium in Tübingen.
+                    Nach dem Zvildienst habe ich an der Universität Tübingen Informatik studiert und sowohl einen Bachelor- als auch Master abschluss gemacht.
+                    Direkt im Anschluss habe ich meine Promotion im Bereich Computergrafik begonnen.
+                    Ich erforsche und entwickle Methoden der <span class="fst-italic">Künstlicher Inteligenz</span> für Videodaten und 
+                    beschäftige mich mit typischen Themen aus der Computergrafik wie Reflektanzmessung- und Modelierung, 3D-Rekonstruktion und viele mehr. 
+                    Zusätzlich zur Forschung ist die Lehre zentraler Bestandteil meiner Arbet an der Uni. 
+                    Dazu zählt sowohl das betreuen von Bachelor- und Master Arbein wie auch entwickeln, durchführen und begleiten von Vorlesungen, Seminaren und Praktikas an unserem Lehrstuhl.
+                  </p>
+                  <p>
+                    Ich möchte noch ein paar Worte verlieren über meine Weltanschauung und die daraus abgeleiteten Ansichten bezüglich der Aufgaben die ich für unsere Gesellschaft und unsere Gemeinde sehe:
+                    Philosophisch lässt sich meine Einstellung als <span class="fst-italic">kosmischer Nihlismus</span> beschreiben,
+                    wass im Prinzip bedeutet, dass ich akzeptiere, dass nichts was hier auf der Erde passiert auch nur in geringster Weise relevant für das Universum ist.
+                    Wenn alles Leben auf Erden auf die abschäulichste Art enden würde, hätte das nicht die geringsten Auswiungen auf die Andromedagalaxie oder sonst eine der bilionen von Galaxien im sichtbaren Universum.
+                    Den Wert, den das Leben, Gegenstände oder bestimmte Erfahrungen für uns haben bekommen sie von uns zugeordnet und nicht von außen oder von oben diktiert.
+
+
+                    Nach meinem Verständniss ist die Erfahrung jedes einzelnen empfindsamen Wesens absolut einzigartig im Universum. 
+                    Das wertvollste Geschenk 
+                  </p>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="padding:0px">
+            <img src="images/dummy.jpg" class="card-img-top" alt="dummy image">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="padding:0px">
+            <img src="images/dummy.jpg" class="card-img-top" alt="dummy image">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
