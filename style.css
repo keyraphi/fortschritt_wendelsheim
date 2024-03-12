@@ -1,0 +1,27 @@
+.header-banner-image {
+  background-image: url('images/Fortschritt.jpg');
+  height: 200pt;
+  background-position: center;
+  background-size:100% auto;
+
+}
+.header-text-font {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (max-width: 479px) {
+  .header-text-font {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 479px) {
+  .header-banner-image {
+    background-image: url('images/Fortschritt.jpg');
+    height: 100pt;
+    background-position: center;
+    background-size:100% auto;
+  }
+}
