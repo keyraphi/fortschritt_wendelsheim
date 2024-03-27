@@ -25,3 +25,19 @@
     background-size:100% auto;
   }
 }
+@media (min-width: 1920px) {
+  .header-banner-image {
+    background-image: url('images/Fortschritt.jpg');
+    height: 250pt;
+    background-position: center;
+    background-size:100% auto;
+  }
+}
+@media (min-width: 2500px) {
+  .header-banner-image {
+    background-image: url('images/Fortschritt.jpg');
+    height: 300pt;
+    background-position: center;
+    background-size:100% auto;
+  }
+}
